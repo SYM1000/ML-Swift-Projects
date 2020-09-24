@@ -16,6 +16,11 @@ struct ContentView: View {
     @State private var showPhotoOptions: Bool = false
     @State private var image: UIImage?
     @State private var sourceType: UIImagePickerController.SourceType = .camera
+    @State private var classificationLabel: String = ""
+    
+    private let classifier = VisionClassifier(mlModel: Fruit_Classifier_1().model)
+    
+    
     
     var body: some View {
         
@@ -52,11 +57,22 @@ struct ContentView: View {
                         
                 }
                 
+                Text(classificationLabel)
+                    .font(.largeTitle)
+                    .padding(.top, 80)
+                
                 Spacer()
                 
                 Button("Classify") {
                     
-                    // perform image classification
+                    if let img = self.image{
+                        // perform image classification
+                        self.classifier?.classify(img) { result in
+                            self.classificationLabel = result
+                        }
+                    }
+                    
+                    
                     
                 }.padding()
                     .foregroundColor(Color.white)

@@ -14,6 +14,8 @@
 		8D7A891E23ECBACD00E3745E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D7A891D23ECBACD00E3745E /* Preview Assets.xcassets */; };
 		8D7A892123ECBACD00E3745E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D7A891F23ECBACD00E3745E /* LaunchScreen.storyboard */; };
 		8D7A892923ECBAF100E3745E /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7A892823ECBAF100E3745E /* ImagePicker.swift */; };
+		E68D837A251C61DD001A3649 /* Fruit Classifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E68D8379251C61DD001A3649 /* Fruit Classifier 1.mlmodel */; };
+		E68D837C251C6290001A3649 /* VisionClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E68D837B251C6290001A3649 /* VisionClassifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		8D7A892023ECBACD00E3745E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D7A892223ECBACD00E3745E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D7A892823ECBAF100E3745E /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		E68D8379251C61DD001A3649 /* Fruit Classifier 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "Fruit Classifier 1.mlmodel"; sourceTree = "<group>"; };
+		E68D837B251C6290001A3649 /* VisionClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionClassifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				8D7A891423ECBACB00E3745E /* AppDelegate.swift */,
 				8D7A891623ECBACB00E3745E /* SceneDelegate.swift */,
 				8D7A891823ECBACB00E3745E /* ContentView.swift */,
+				E68D8379251C61DD001A3649 /* Fruit Classifier 1.mlmodel */,
+				E68D837B251C6290001A3649 /* VisionClassifier.swift */,
 				8D7A891A23ECBACD00E3745E /* Assets.xcassets */,
 				8D7A891F23ECBACD00E3745E /* LaunchScreen.storyboard */,
 				8D7A892223ECBACD00E3745E /* Info.plist */,
@@ -151,7 +157,9 @@
 			files = (
 				8D7A891523ECBACB00E3745E /* AppDelegate.swift in Sources */,
 				8D7A892923ECBAF100E3745E /* ImagePicker.swift in Sources */,
+				E68D837A251C61DD001A3649 /* Fruit Classifier 1.mlmodel in Sources */,
 				8D7A891723ECBACB00E3745E /* SceneDelegate.swift in Sources */,
+				E68D837C251C6290001A3649 /* VisionClassifier.swift in Sources */,
 				8D7A891923ECBACB00E3745E /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
