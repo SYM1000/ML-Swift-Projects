@@ -15,6 +15,8 @@
 		8D29DF562422F87100DF05EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D29DF542422F87100DF05EA /* LaunchScreen.storyboard */; };
 		8D29DF5E2422FD0100DF05EA /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D29DF5D2422FD0100DF05EA /* AudioRecorder.swift */; };
 		8D29DF602423CFA800DF05EA /* SoundClassifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8D29DF5F2423CFA800DF05EA /* SoundClassifier 1.mlmodel */; };
+		E6DD0F61251D8E8100613B3F /* AnimalSoundClassifier 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E6DD0F60251D8E8100613B3F /* AnimalSoundClassifier 1.mlmodel */; };
+		E6DD0F63251D90F400613B3F /* AudioClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DD0F62251D90F400613B3F /* AudioClassifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		8D29DF572422F87100DF05EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D29DF5D2422FD0100DF05EA /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
 		8D29DF5F2423CFA800DF05EA /* SoundClassifier 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "SoundClassifier 1.mlmodel"; sourceTree = "<group>"; };
+		E6DD0F60251D8E8100613B3F /* AnimalSoundClassifier 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "AnimalSoundClassifier 1.mlmodel"; sourceTree = "<group>"; };
+		E6DD0F62251D90F400613B3F /* AudioClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioClassifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				8D29DF492422F87000DF05EA /* AppDelegate.swift */,
 				8D29DF4B2422F87000DF05EA /* SceneDelegate.swift */,
 				8D29DF4D2422F87000DF05EA /* ContentView.swift */,
+				E6DD0F62251D90F400613B3F /* AudioClassifier.swift */,
+				E6DD0F60251D8E8100613B3F /* AnimalSoundClassifier 1.mlmodel */,
 				8D29DF5F2423CFA800DF05EA /* SoundClassifier 1.mlmodel */,
 				8D29DF4F2422F87100DF05EA /* Assets.xcassets */,
 				8D29DF542422F87100DF05EA /* LaunchScreen.storyboard */,
@@ -152,10 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6DD0F61251D8E8100613B3F /* AnimalSoundClassifier 1.mlmodel in Sources */,
 				8D29DF4A2422F87000DF05EA /* AppDelegate.swift in Sources */,
 				8D29DF4C2422F87000DF05EA /* SceneDelegate.swift in Sources */,
 				8D29DF5E2422FD0100DF05EA /* AudioRecorder.swift in Sources */,
 				8D29DF4E2422F87000DF05EA /* ContentView.swift in Sources */,
+				E6DD0F63251D90F400613B3F /* AudioClassifier.swift in Sources */,
 				8D29DF602423CFA800DF05EA /* SoundClassifier 1.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

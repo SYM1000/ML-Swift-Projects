@@ -18,6 +18,8 @@ struct ContentView: View {
     @State private var allowed: Bool = false
     @State private var classification: String = ""
     
+    private let audioClassifier = AudioClassifier(model: AnimalSoundClassifier_1().model)
+    
     let emojis = ["cow":"🐮","dog":"🐶"]
 
     private var documentsDirectory: URL {
@@ -62,7 +64,13 @@ struct ContentView: View {
             
             Button("Classify") {
                 
-               
+                self.audioClassifier?.classify(audioFile: self.audioFilePath) { result in
+                    if let result = result{
+                        self.classification = result
+                        print("Es un \(result)")
+                    }
+                    
+                }
                  
                 
             }.padding()
