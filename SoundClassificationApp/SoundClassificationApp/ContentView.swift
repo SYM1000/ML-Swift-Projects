@@ -35,7 +35,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             
-            Spacer()
+            Spacer() 
             
             Text(self.emojis[self.classification] ?? "")
                 .font(.custom("Arial", size: 100))
