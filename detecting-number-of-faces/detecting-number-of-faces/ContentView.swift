@@ -14,9 +14,10 @@ struct ContentView: View {
     let photos = ["face","friends-sitting","people-sitting","ball","bird"]
 
     @State private var currentIndex: Int = 0
+    @State private var classificationLabel : String = ""
     
     
-    private func detectFaces(completion: ([VNFaceObservation]?) -> Void){
+    private func detectFaces(completion: @escaping ([VNFaceObservation]?) -> Void){
         
         guard let image = UIImage(named: photos[currentIndex]),
             let cgImage = image.cgImage,
@@ -29,12 +30,15 @@ struct ContentView: View {
         let handler = VNImageRequestHandler(cgImage: cgImage, orientation: orientation, options: [:])
         
         DispatchQueue.global().async {
+            
             try? handler.perform([request])
             
             guard let observations = request.results as? [VNFaceObservation] else {
                 return completion(nil)
             }
+            
             completion(observations)
+            
         }
     }
     
@@ -77,8 +81,14 @@ struct ContentView: View {
             
             Button("Classify") {
                 // classify the image here
-                self.detectFaces{ _ in
+                self.detectFaces{ results in
                     
+                    if let results = results{
+                        //Update UI
+                        DispatchQueue.main.async { //This is used to update using the main thread
+                            self.classificationLabel = "Faces: \(results.count)"
+                        }
+                    }
                 }
                 
                 
@@ -87,7 +97,7 @@ struct ContentView: View {
             .background(Color.green)
             .cornerRadius(8)
             
-            Text("")
+            Text(classificationLabel)
         }
     }
 }
